@@ -24,14 +24,51 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="44" y="983"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Watch" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="292" y="983"/>
+        </scene>
+        <!--CheckIn-->
+        <scene sceneID="rzv-AV-SLC">
+            <objects>
+                <controller identifier="CheckIn" id="CWd-gj-dxE">
+                    <items>
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" contentMode="center" layout="vertical" id="IF2-Vn-BRj">
+                            <items>
+                                <group width="1" height="32" alignment="left" spacing="4" id="hIk-Sx-VFK">
+                                    <items>
+                                        <label alignment="left" verticalAlignment="center" text="MEL" id="rxG-iA-tcB" userLabel="MEL">
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                        </label>
+                                        <imageView width="24" height="20" alignment="center" verticalAlignment="center" image="Plane" id="hOK-GY-NmF">
+                                            <color key="tintColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </imageView>
+                                        <label alignment="right" verticalAlignment="center" text="SFO" id="k8O-51-IJy">
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <button alignment="center" verticalAlignment="center" id="96v-Jb-9VI">
+                                    <group key="contentGroup" width="78" height="78" alignment="left" radius="39" id="k12-OO-gdQ">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Check In" id="Wq1-JA-eKL">
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="459.73913043478257" y="344.55357142857144"/>
         </scene>
         <!--Air Aber-->
         <scene sceneID="dIx-Mq-QQQ">
@@ -154,7 +191,7 @@
             <objects>
                 <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Watch" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="44" y="1349"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
