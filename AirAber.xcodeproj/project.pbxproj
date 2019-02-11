@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1800B8711FC1E26C00855EEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1800B8701FC1E26C00855EEC /* LaunchScreen.xib */; };
+		21820863221183D0001168D1 /* CheckInInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21820862221183D0001168D1 /* CheckInInterfaceController.swift */; };
 		219B8857220C4E5100336AB7 /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B8856220C4E5100336AB7 /* ScheduleInterfaceController.swift */; };
 		219B8859220C503C00336AB7 /* FlightRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B8858220C503C00336AB7 /* FlightRowController.swift */; };
 		21C8A418220C18300032FDA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21C8A417220C18300032FDA6 /* Assets.xcassets */; };
@@ -74,6 +75,7 @@
 
 /* Begin PBXFileReference section */
 		1800B8701FC1E26C00855EEC /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		21820862221183D0001168D1 /* CheckInInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInInterfaceController.swift; sourceTree = "<group>"; };
 		219B8856220C4E5100336AB7 /* ScheduleInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleInterfaceController.swift; sourceTree = "<group>"; };
 		219B8858220C503C00336AB7 /* FlightRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRowController.swift; sourceTree = "<group>"; };
 		21C8A412220C182E0032FDA6 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 				21C8A43B220C24970032FDA6 /* FlightInterfaceController.swift */,
 				219B8856220C4E5100336AB7 /* ScheduleInterfaceController.swift */,
 				219B8858220C503C00336AB7 /* FlightRowController.swift */,
+				21820862221183D0001168D1 /* CheckInInterfaceController.swift */,
 			);
 			path = "Watch Extension";
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			files = (
 				21C8A438220C1A1E0032FDA6 /* Flight.swift in Sources */,
 				21C8A43C220C24970032FDA6 /* FlightInterfaceController.swift in Sources */,
+				21820863221183D0001168D1 /* CheckInInterfaceController.swift in Sources */,
 				219B8859220C503C00336AB7 /* FlightRowController.swift in Sources */,
 				219B8857220C4E5100336AB7 /* ScheduleInterfaceController.swift in Sources */,
 				21C8A428220C18300032FDA6 /* NotificationController.swift in Sources */,

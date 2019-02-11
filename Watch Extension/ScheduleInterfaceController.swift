@@ -13,7 +13,7 @@ import Foundation
 class ScheduleInterfaceController: WKInterfaceController {
     @IBOutlet weak var flightTable: WKInterfaceTable!
     var flights = Flight.allFlights()
-    
+  var selectedIndex: Int = 0
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         flightTable.setNumberOfRows(flights.count, withRowType: "FlightRow")
@@ -26,8 +26,20 @@ class ScheduleInterfaceController: WKInterfaceController {
       }
     }
   
+  override func didAppear() {
+    super.didAppear()
+    guard flights[selectedIndex].checkedIn, let controller = flightTable.rowController(at: selectedIndex) as? FlightRowController else {
+      return
+    }
+    animate(withDuration: 0.35) {
+      controller.updateForCheckIn()
+    }
+  }
+  
   override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+    selectedIndex = rowIndex
     let flight = flights[rowIndex]
-    presentController(withName: "Flight", context: flight)
+    let controllers = ["Flight", "CheckIn"]
+    presentController(withNames: controllers, contexts: [flight, flight])
   }
 }

@@ -36,7 +36,7 @@
         <!--CheckIn-->
         <scene sceneID="rzv-AV-SLC">
             <objects>
-                <controller identifier="CheckIn" id="CWd-gj-dxE">
+                <controller identifier="CheckIn" id="CWd-gj-dxE" customClass="CheckInInterfaceController" customModule="Watch_Extension">
                     <items>
                         <group width="1" height="1" alignment="center" verticalAlignment="center" contentMode="center" layout="vertical" id="IF2-Vn-BRj">
                             <items>
@@ -62,10 +62,18 @@
                                         </items>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </group>
+                                    <connections>
+                                        <action selector="checkInButtonTapped" destination="CWd-gj-dxE" id="uPL-HB-w6W"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="backgroundGroup" destination="IF2-Vn-BRj" id="C49-n5-8HB"/>
+                        <outlet property="destinationLabel" destination="k8O-51-IJy" id="CgD-6Z-F9w"/>
+                        <outlet property="originLabel" destination="rxG-iA-tcB" id="o8K-XT-f9j"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="459.73913043478257" y="344.55357142857144"/>
